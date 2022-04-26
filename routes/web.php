@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
-    return 'welcome';
+    return '<h1 style=text-align:center>Welcome!<h1>';
+});
+*/
+
+Route::get('/', function () {
+    return view('home');
 });
