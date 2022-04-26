@@ -1,3 +1,7 @@
+<?php
+
+use PhpParser\Node\Stmt\Foreach_;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,5 +26,11 @@
         <li><a href="{{ route('head') }}">Vai qui</a></li>
         <li><a href="{{ route('head2') }}">Oppure qui</a></li>
     </ol>
+
+    <ul>
+        @foreach ($links as $link)
+          <li>{{ $user['name'] ?? '' }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

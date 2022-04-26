@@ -20,10 +20,27 @@ Route::get('/', function () {
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    $parametri = [
+        'links' => [
+            [
+                'name' => 'Pagina 1'
+            ],
+            [
+                'name' => 'Pagina 2'
+            ],
+            [
+                'name' => 'Pagina 3'
+            ],
+            [
+                'name' => 'Pagina 4'
+            ]
+        ],
+    ];
+    return view('home', $parametri);
+})->name('home');
 
 Route::get('/head', function () {
+    
     return view('header1');
 })->name('head');
 
