@@ -24,5 +24,9 @@ Route::get('/', function () {
 });
 
 Route::get('/head', function () {
-    return view('header');
+    return view('header1');
 })->name('head');
+
+Route::get('/head2', function () {
+    return view('header2');
+})->name('head2');

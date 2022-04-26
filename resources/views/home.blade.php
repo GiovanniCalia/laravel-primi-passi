@@ -8,8 +8,11 @@
 
     <!-- STYLE CSS -->
     <style>
-        h1{
+        *{
             text-align: center;
+        }
+        li{
+            list-style-type: none;
         }
     </style>
 </head>
@@ -17,6 +20,7 @@
     <h1>Hello World!</h1>
     <ol>
         <li><a href="{{ route('head') }}">Vai qui</a></li>
+        <li><a href="{{ route('head2') }}">Oppure qui</a></li>
     </ol>
 </body>
 </html>
