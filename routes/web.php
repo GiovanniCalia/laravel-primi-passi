@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/head', function () {
+    return view('header');
+})->name('head');
