@@ -21,15 +21,14 @@ use PhpParser\Node\Stmt\Foreach_;
     </style>
 </head>
 <body>
+
+    {{-- @dd($links) --}}
+
     <h1>Hello World!</h1>
-    <ol>
-        <li><a href="{{ route('head') }}">Vai qui</a></li>
-        <li><a href="{{ route('head2') }}">Oppure qui</a></li>
-    </ol>
 
     <ul>
         @foreach ($links as $link)
-          <li>{{ $user['name'] ?? '' }}</li>
+          <li><a href="{{ route($link['name']) }}">{{ $link['name'] }}</a></li>
         @endforeach
     </ul>
 </body>
